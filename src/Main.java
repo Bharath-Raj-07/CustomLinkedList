@@ -3,8 +3,10 @@ public class Main {
         System.out.println("Welcome to Linked List");
         LinkedList linkedList=new LinkedList();
         linkedList.addNode(56);
-        linkedList.addNode(30);
-        linkedList.addNode(70);
+//        linkedList.addNode(30);
+//        linkedList.addNode(70);
+        linkedList.appendNode(30);
+        linkedList.appendNode(70);
         linkedList.displayList();
     }
 }

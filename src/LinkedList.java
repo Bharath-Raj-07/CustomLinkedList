@@ -11,6 +11,19 @@ public class LinkedList {
         newNode.setNext(head);
         head=newNode;
     }
+    void appendNode(int data){
+        MyNode newNode = new MyNode(data);
+        MyNode current=head;
+        if(head == null){
+            newNode.setNext(head);
+            head = newNode;
+            return;
+        }
+        while(current.getNext()!=null){
+            current=current.getNext();
+        }
+        current.setNext(newNode);
+    }
 
     void displayList(){
         MyNode current = head;
